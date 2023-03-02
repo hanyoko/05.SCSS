@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: red;
+}
+h2::after {
+  content: "HELLO";
+}
+h2 span {
+  color: pink;
+}
+
+div {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: red;
+}
+div::after {
+  content: "HELLO";
+}
+div span {
+  color: pink;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "나눔 고딕";
+  color: red;
+}
+p::after {
+  content: "HELLO";
+}
+p span {
+  color: pink;
+}
+
+.box1 {
+  border: 1px dashed red;
+}
+
+.box2 {
+  border: 5px dashed blue;
+}
+
+.box3 {
+  border: 1px dashed black;
+} /* 기본값을 사용하고 싶을 때 */
+.box4 {
+  border: 1px dashed pink;
+} /* px은 기본값으로 사용하고 색상만 변경하고 싶을 때 *//*# sourceMappingURL=mixin.css.map */

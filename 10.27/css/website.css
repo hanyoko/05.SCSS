@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#wrap {
+  padding: 16px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+header {
+  background-color: white;
+  height: 150px;
+  line-height: 30px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+header h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+header p {
+  text-align: center;
+  padding: 10px 0;
+}
+header nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 0 20px;
+}
+header nav > a {
+  padding-right: 30px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+#content h2 {
+  padding: 5px 0;
+}
+#content h3 {
+  padding: 5px 0;
+}
+#content p {
+  padding: 5px 0;
+}
+#content #left {
+  width: 76%;
+}
+#content #left .a {
+  background-color: white;
+  order: 1;
+  margin: 15px 0;
+  padding: 15px;
+}
+#content #left .a div {
+  background-color: #555;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+#content #left .b {
+  background-color: white;
+  order: 3;
+  margin: 15px 0;
+  padding: 15px;
+}
+#content #left .b div {
+  background-color: #555;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+#content #right {
+  width: 23%;
+}
+#content #right .c {
+  background-color: white;
+  order: 2;
+  margin: 15px 0;
+  padding: 15px;
+}
+#content #right .c div {
+  background-color: #555;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+#content #right .d {
+  background-color: white;
+  order: 4;
+  margin: 15px 0;
+  padding: 15px;
+}
+#content #right .d div {
+  background-color: #555;
+  height: 100px;
+  padding: 10px;
+  color: white;
+}
+#content #right .e {
+  background-color: white;
+  order: 6;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  background-color: #555;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+}/*# sourceMappingURL=website.css.map */

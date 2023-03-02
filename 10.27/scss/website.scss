@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+li {
+    list-style: none;
+}
+a { text-decoration: none; color: inherit;}
+#wrap {padding: 16px;}
+body {
+    background-color: #f1f1f1;
+}
+header {
+    background-color: white;
+    height: 150px;
+    line-height: 30px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    h1 {
+        text-align: center;
+        padding-top: 30px;
+    }
+    p {
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            li {
+                padding: 0 20px;
+            }
+        }
+        > a {padding-right: 30px;}
+    }
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    h2 {
+        padding: 5px 0;
+    }
+    h3 {
+        padding: 5px 0;
+    }
+    p {
+        padding: 5px 0;
+    }
+    #left { 
+        width: 76%;
+        .a {
+            background-color: white;
+            order: 1;
+            margin: 15px 0;
+            padding: 15px;
+            div {
+                background-color: #555;
+                height: 100px;
+                padding: 10px;
+                color: white;
+            }
+        }
+        .b {
+            background-color: white;
+            order: 3;
+            margin: 15px 0;
+            padding: 15px;
+            div {
+                background-color: #555;
+                height: 100px;
+                padding: 10px;
+                color: white;
+            }
+        }
+    }
+    #right {
+        width: 23%;
+        .c {
+            background-color: white;
+            order: 2;
+            margin: 15px 0;
+            padding: 15px;
+            div {
+                background-color: #555;
+                height: 100px;
+                padding: 10px;
+                color: white;
+            }
+        }
+        .d {
+            background-color: white;
+            order: 4;
+            margin: 15px 0;
+            padding: 15px;
+            div {
+                background-color: #555;
+                height: 100px;
+                padding: 10px;
+                color: white;
+            }
+        }
+        .e {
+            background-color: white;
+            order: 6;
+            margin: 10px 0;
+            padding: 15px;
+        }
+    }
+
+}
+footer {
+    display: flex;
+    background-color: #555;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: white;
+}

@@ -1,0 +1,109 @@
+//변수 선언
+$default-padding: 16px;
+$width: 25%;
+$smallfont: 13px;
+
+//믹스인 선언
+@mixin flexbox($dir: row, $just: space-between, $align: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @content;
+}
+
+.inner_con {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#header {
+    background: black;    
+    padding: $default-padding;
+    .inner_con {
+        @include flexbox();
+        ul {
+            color: #fff;
+            @include flexbox();
+            li { 
+                padding: 0 $default-padding;
+                a {
+                    @include flexbox();
+                }
+            }
+        }
+    }
+}        
+#container {
+    #visual {
+        background: black;
+        @include flexbox($just: center);
+    }
+}
+#product {
+    #product_menu {
+        @include flexbox();
+        padding: $default-padding;
+        border-bottom: 3px double #ccc;
+        ul {
+            @include flexbox();
+            padding: $default-padding;
+            li {
+                padding: $default-padding;
+            }
+        }
+    }
+    #product_lists {
+        padding: $default-padding;
+        h3 {
+            text-align: center;
+            font-size: 14px;
+        }
+        ul {
+            @include flexbox ();
+            li {
+                width: $width;
+                text-align: center;
+                font-size: $smallfont;
+                padding: $default-padding;
+            }
+        }
+    }
+}
+#banner {
+    display: flex;
+    width: 100%;
+    .left {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    .right {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}
+#footer {
+    #footer_menu {
+        @include flexbox();
+        background: aliceblue;
+        ul {
+            @include flexbox();
+            padding: $default-padding;
+            li {
+                padding: 0 $default-padding;
+            }
+        }
+    }
+    #footer_copy {
+        margin: 10px 0;
+        @include flexbox();
+        address {
+            width: 70%;
+            font-size: 14px;
+        }
+        
+    }
+}

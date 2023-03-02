@@ -1,0 +1,52 @@
+// mixin 재활용
+// mixin 선언하기 @mixin
+// mixin 사용하기 @include
+// 매개변수가 없을 때 @mixin 믹스인이름 { 스타일; }
+// 매개변수가 있을 때 @mixin 믹스인이름($매개변수) { 스타일; }
+// div { @include 믹스인이름; }
+// div { @include 믹스인이름(인수); }
+@mixin flexbox($dir, $justify, $align) {
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $justify;
+	align-items: $align;	
+    @content;
+}
+#header {
+    @include flexbox(column, space-between, center) {
+        color: red;
+    }
+}
+div {
+	@include flexbox(column, center, center)
+}
+ul {
+	@include flexbox(row, space-between, center)
+}
+@mixin largetext {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "나눔 고딕";
+    color: red;
+    &::after {
+        content: "HELLO";
+    }
+    span {
+        color: pink;
+    }
+}
+h2 {
+    @include largetext();
+}
+div {
+    @include largetext();
+}
+p { @include largetext(); }
+
+@mixin dash-line($width:1px, $color:black) {
+    border: $width dashed $color;
+}
+.box1 { @include dash-line(1px, red); }
+.box2 { @include dash-line(5px, blue); }
+.box3 { @include dash-line(); } /* 기본값을 사용하고 싶을 때 */
+.box4 { @include dash-line($color: pink); } /* px은 기본값으로 사용하고 색상만 변경하고 싶을 때 */
